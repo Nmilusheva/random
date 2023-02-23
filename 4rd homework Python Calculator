@@ -1,0 +1,47 @@
+while True:
+    print("Select operation:")
+    print("1. Add")
+    print("2. Subtract")
+    print("3. Multiply")
+    print("4. Divide")
+
+    choice = input("Enter choice (1/2/3/4): ")
+    if choice not in ['1', '2', '3', '4']:
+        print("Error: Invalid choice")
+        continue
+
+    num1 = input("Enter first number: ")
+    if not num1.isnumeric():
+        print("Error: Invalid input")
+        continue
+
+    num2 = input("Enter second number: ")
+    if not num2.isnumeric():
+        print("Error: Invalid input")
+        continue
+
+    num1 = float(num1)
+    num2 = float(num2)
+
+    if choice == '1':
+        result = num1 + num2
+        operator = "+"
+    elif choice == '2':
+        result = num1 - num2
+        operator = "-"
+    elif choice == '3':
+        result = num1 * num2
+        operator = "*"
+    else:
+        if num2 == 0:
+            print("Error: Division by zero")
+            continue
+        else:
+            result = num1 / num2
+            operator = "/"
+
+    print(f"{num1} {operator} {num2} = {result:.2f}")
+
+    choice = input("Would you like to do a new calculation? (yes/no): ")
+    if choice.lower() != "yes":
+        break
