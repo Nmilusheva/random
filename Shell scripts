@@ -1,0 +1,56 @@
+1.	#!/bin/bash
+2.	date_and_time=$(date)
+3.	username=$(whoami)
+4.	current_directory=$(pwd)
+5.	echo "Current date and time: $date_and_time"
+6.	echo "Current username: $username"
+7.	echo "Current working directory: $current_directory"
+
+
+
+1.	#!/bin/bash
+2.	message="I love learning about DevOps"
+3.	echo $message
+
+
+
+1.	#!/bin/bash
+2.	echo "plan"
+3.	echo "code"
+4.	echo "build"
+5.	echo "test"
+6.	echo "release"
+7.	echo "deploy"
+
+
+
+1.	#!/bin/bash
+2.	read -p "Enter the name of a file or directory: " name
+3.	if [ -f "$name" ]; then
+4.	echo "$name is a regular file"
+5.	ls -l "$name"
+6.	elif [ -d "$name" ]; then
+7.	echo "$name is a directory 
+8.	ls -l "$name"
+9.	else
+10.	echo "$name is another type of file"
+11.	ls -l "$name"
+12.	fi
+
+
+
+1.	#!/bin/bash
+2.	if [ "$#" -ne 3 ]; then
+3.	echo "Usage: $0 arg1 arg2 arg3"
+4.	exit 1
+5.	fi
+6.	echo "The first argument is: $1"
+    echo "The second argument is: $2"
+    echo "The third argument is: $3"
+
+
+
+1.	#!/bin/bash
+2.	name="Your Name Here"
+3.	echo "My name is: $name"
+4.	uptime
