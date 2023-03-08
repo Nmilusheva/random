@@ -1,0 +1,12 @@
+1.	I open the Ubuntu virtual machine; open the terminal by pressing Ctrl + Alt + T on the keyboard; create a new file called "friends.txt" by typing the following command and pressing Enter “touch friends.txt”; Open the "friends.txt" file in the Nano text editor by typing the following command and pressing Enter “nano friends.txt”; ype the names of your three friends on separate lines, for example Maria, Ivan, Petar; Press Ctrl + X to exit Nano, then press Y to save the changes, and press Enter to confirm the filename.
+2.	Using the following command “cat friends.txt”. This will print the contents of the "friends.txt" file to the console.
+3.	Using the following command “mv friends.txt bestfriends.txt”. After running this command, I verify that the file has been renamed by using the "ls".
+4.	Using the following command “cp bestfriends.txt sysadmins.txt”. After running this command, I verify that the file has been renamed by using the "ls".
+5.	Using the following command “ls b*.txt” we list the files that match our pattern, for example the command will output bestfriends.txt
+6.	I type in “wc -c sysadmins.txt” -> "wc" command stands for "word count" and counts the number of lines, words, and characters in a file. The "-c" option tells "wc" to count the number of bytes in the file.
+7.	“echo -e "Toyota\nHonda\nFord\nChevrolet\nTesla" > cars.txt”  I run this command, ater running this command, I use the "cat" command to verify that the file has been created and contains the expected list of brands.
+8.	I basically used the method from point 6  “wc -c cars.txt”
+9.	“cp cars.txt /tmp”  I am copying the file "cars.txt" to the directory "/tmp", after running this command, I can verify that the file has been copied by using the "ls" command to list the files in the directory "/tmp"
+10.	“ls /tmp/*.txt”  the 'ls' command lists the files that match this pattern.
+11.	“mv /tmp/cars.txt /tmp/vehicles.txt”  I am renaming the file "cars.txt" to "vehicles.txt" in the directory "/tmp". “ls /tmp”  This should show the file "vehicles.txt" in the list of files, and "cars.txt" should no longer be present.
+12.	“less /etc/passwd”  this command opens the "/etc/passwd" file in an interactive viewer that allows you to scroll up and down through the file.
